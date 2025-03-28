@@ -1,24 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./Components/Nav/Header";
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Landing from "./Components/Landing/Landing";
+import Projects from "./Components/Projects Page/Projects";
+import About from "./Components/About/About";
+import Contact from "./Components/Contact Me Page/Contact";
+
+import Footer from "./Components/Footer/Footer";
+import ReactGA from "react-ga";
 
 function App() {
+  useEffect(() => {
+    ReactGA.initialize("UA-204992447-1");
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Switch>
+          <Route path="/">
+            <Header />
+            <Landing />
+            <About />
+            <Projects />
+            <Contact />
+            <Footer />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
