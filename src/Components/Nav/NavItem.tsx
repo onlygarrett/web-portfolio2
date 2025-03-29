@@ -1,7 +1,17 @@
 import { NavHashLink } from "react-router-hash-link";
 import "./NavItem.css";
 
-function NavItem({ clicked: boolean, setClicked: (value: boolean) => void, name: string, link: string }) {
+function NavItem({
+  clicked,
+  setClicked,
+  name,
+  link,
+}: {
+  clicked: boolean;
+  setClicked: (value: boolean) => void;
+  name: string;
+  link: string;
+}): JSX.Element {
   const isContact = name === "Contact";
   return (
     <NavHashLink

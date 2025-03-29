@@ -9,10 +9,15 @@ interface NavProps {
   setClicked: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
+interface NavItemType {
+  name: string;
+  link: string;
+}
+
 const Nav: React.FC<NavProps> = ({ clicked, setClicked }) => {
   return (
     <nav className={`Nav ${clicked ? "active" : ""}`}>
-      {navItems.map((item) => (
+      {navItems.map((item: NavItemType) => (
         <NavItem
           setClicked={setClicked}
           clicked={clicked}
@@ -20,7 +25,6 @@ const Nav: React.FC<NavProps> = ({ clicked, setClicked }) => {
           link={item.link}
         />
       ))}
-      {/* <BlogButton /> */}
       <ResumeButton />
     </nav>
   );
