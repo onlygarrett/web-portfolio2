@@ -1,17 +1,17 @@
-import { FaGithub } from "react-icons/fa";
+// import { FaGithub } from "react-icons/fa";
 import DarkWave from "../Waves/DarkWave";
 import "./ProjectLight.css";
-import { useMediaQuery } from "react-responsive";
+// import { useMediaQuery } from "react-responsive";
 
 interface Project1Props {
   id: string;
 }
 
 function Project1({ id }: Project1Props) {
-  const isDesktopOrLaptop = useMediaQuery({
-    query: "(min-width: 769px)",
-  });
-
+  // const isDesktopOrLaptop = useMediaQuery({
+  //   query: "(min-width: 769px)",
+  // });
+  //
   return (
     <article id={id} className="project light">
       <h2 className="project__header">Projects</h2>

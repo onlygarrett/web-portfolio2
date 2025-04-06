@@ -6,7 +6,7 @@ import Aos from "aos";
 import "./About.css";
 import "aos/dist/aos.css";
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function About() {
   useEffect(() => {
