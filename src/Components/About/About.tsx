@@ -18,26 +18,19 @@ function About() {
       <div data-aos="fade-right" className="about__text">
         <h2 className="about__heading">About Me</h2>
         <p className="about__body">
-          👋 Hello My name is Jack Parsons and I am a fourth-year Computer
-          Science Student attending the{" "}
-          <span className="about__specialText">University of Alberta</span>.
+          👋 Hello My name is Garrett Rumschik and I am a Security Engineer for{" "}
+          <span className="about__specialText">Novacoast</span>.
           <br />
           <br />
-          🏢 I have previously interned at{" "}
-          <span className="about__specialText">Okta</span> this past summer, and
-          at <span className="about__specialText">Psystem</span> the previous
-          summer. With roles as a Software Engineer and a Fullstack Developer
+          🏢 I have previously worked at at{" "}
+          <span className="about__specialText">Mindforge LLC</span> and
+          done work with <span className="about__specialText">Palo Alto Networks</span>.
+          With roles as a Fullstack Software Engineer and a Expertise Engineer
           respectively. <br /> <br />
-          🏎️ This year I am co-leading the University of Alberta Formula Racing
-          club's new{" "}
-          <span className="about__specialText">
-            Autonomous Driving Subsystem
-          </span>{" "}
-          from the ground up.
-          <br /> <br /> 💥Currently, I am very interested in, and learning about{" "}
-          <span className="about__specialText">compilers</span>,{" "}
-          <span className="about__specialText">autonomous driving</span>, and{" "}
-          <span className="about__specialText">deep learning</span>.
+          💥Currently, I am interested in, and learning about{" "}
+          <span className="about__specialText">Go</span>,{" "}
+          <span className="about__specialText">Microservices</span>, and a little{" "}
+          <span className="about__specialText">React frontend</span>.
         </p>
         <br />
         <p className="about__body">
@@ -50,7 +43,7 @@ function About() {
       </div>
       <img
         className="about__headshot"
-        src="/images/jack_parsons_headshot.jpg"
+        src="/images/garrett_rumschik_headshot.jpg"
         alt="Brand Logo"
         width="300"
         height="300"

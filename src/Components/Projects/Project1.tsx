@@ -17,65 +17,46 @@ function Project1({ id }: Project1Props) {
       <h2 className="project__header">Projects</h2>
       <div className="project__main">
         <img
-          className="project__image project__specialMobileImage"
-          src="/images/health_fusion_home.png"
-          alt="Health Fusion Project Home Page"
-          width="15%"
+          className="project__image project__imageDark"
+          src="/images/promotepdx.png"
+          alt="PromotePDX Project"
+          width="30%"
           height="auto"
           loading="lazy"
         />
-        {isDesktopOrLaptop && (
-          <>
-            <img
-              className="project__image"
-              src="/images/health_fusion_add.png"
-              alt="Health Fusion Map Page"
-              width="15%"
-              height="auto"
-              loading="lazy"
-            />
-            <img
-              className="project__image"
-              src="/images/health_fusion_map.png"
-              alt="Health Fusion Project Add Page"
-              width="15%"
-              height="auto"
-              loading="lazy"
-            />
-          </>
-        )}
 
         <div data-aos="fade-left" className="project__right">
-          <h3 className="project__title">Health Fusion</h3>
+          <h3 className="project__title">PromotePDX Website</h3>
           <p className="project__description project__body">
-            A <span className="project__specialText">mobile app</span> built to
-            help manage life. Allows users to{" "}
+            A <span className="project__specialText">web app</span> built
+            for a Portland-based live music discovery company. Allows users to{" "}
             <span className="project__specialText">
-              manage all of their medications
+              search through local live music events
             </span>
-            , with an enjoyable{" "}
-            <span className="project__specialText">calendar view</span> is
-            available for all users so they can view their{" "}
-            <span className="project__specialText">medication history</span>
-            from the past or look to the future and see what they need to take.
-            Finally, users are also given a{" "}
-            <span className="project__specialText">map view</span> so that they
-            have no problem finding any nearby pharmacies or hostiptals if
-            needed.
+            , with a thorough{" "}
+            <span className="project__specialText">event calendar</span> that pulls from a
+            company-managed event database at regular timed intervals. This allows users to navigate to the{" "}
+            <span className="project__specialText">event page</span>
+            for each given event's venue. The event page, searching and filtering service,
+            and pipeline for updating the event database were all built by me.
+            Finally, the app also houses a {" "}
+            <span className="project__specialText">contact page</span> as well as links to socials and a sign up
+            form for their company newsletter. All of the frontend, backend, hosting, and database management was done by me.
+            On the server side, the app has automatic deployment and continuous integration using <span className="project__specialText">GitHub Actions and Docker</span>.
           </p>
           <p className="project__tech project__body">
-            &gt; React Native · Firebase · Firestore · Google Maps API · Google
-            Autocomplete API
+            &gt; React · Django · Docker · Google Cloud Platform · DigitalOcean
+            Nginx · PostgreSQL · Python · Redis · Celery
           </p>
           <a
             className="project__sourceCode"
-            href="https://github.com/jackparsonss/health-fusion"
+            href="https://promotepdx.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="=Website GitHub Repository"
           >
-            <FaGithub className="project__githubLogo" size={25} />
-            <h3 className="project__sourceCodeText">Source Code</h3>
+            {/* <FaGithub className="project__githubLogo" size={25} /> */}
+            <h3 className="project__sourceCodeText">Link to Website</h3>
           </a>
         </div>
       </div>

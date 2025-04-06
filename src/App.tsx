@@ -8,7 +8,7 @@ import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 
 import Footer from "./Components/Footer/Footer";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 function App() {
   useEffect(() => {

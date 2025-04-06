@@ -1,5 +1,6 @@
 import "./LeftSocialMediaIcons.css";
-import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaTwitter, } from "react-icons/fa";
+import { FaBluesky } from "react-icons/fa6";
 
 function LeftSocialMediaIcons() {
   return (
@@ -33,12 +34,12 @@ function LeftSocialMediaIcons() {
         />
       </a>
       <a
-        href="https://twitter.com/jackparsonss"
+        href="https://bsky.app/profile/onlygarrett.bsky.social"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="my Twitter"
+        aria-label="my bluesky"
       >
-        <FaTwitter className="leftSocialMediaIcons__twitter icon" size={30} />
+        <FaBluesky className="leftSocialMediaIcons__bluesky icon" size={30} />
       </a>
       <div className="leftSocialMediaIcons__verticalBar" />
       <hr className="leftSocialMediaIcons__mobileRightBar mobile__hr" />
