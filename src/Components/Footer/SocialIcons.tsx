@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaBluesky } from "react-icons/fa6";
 import "./SocialIcons.css";
 
 function SocialMediaIcons() {
@@ -36,15 +37,12 @@ function SocialMediaIcons() {
         />
       </a>
       <a
-        href="https://twitter.com/onlygarrett"
+        href="https://bsky.app/profile/onlygarrett.bsky.social"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="my Twitter"
+        aria-label="my bluesky"
       >
-        <FaTwitter
-          className="socialMediaIcons__twitter footer__icon"
-          size={30}
-        />
+        <FaBluesky className="socialMediaIcons__bluesky footer__icon" size={30} />
       </a>
       <hr className="socialMediaIcons__rightHr hr" />
     </div>
