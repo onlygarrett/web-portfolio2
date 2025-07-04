@@ -1,19 +1,29 @@
 import "./PurpleArrows.css";
-import { NavHashLink } from "react-router-hash-link";
+// import { NavHashLink } from "react-router-hash-link";
 
 function PurpleArrows() {
+  const scrollToAbout = () => {
+    // Find the about section by id and scroll to it
+    const aboutSection = document.getElementById("about");
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth", block: "end" });
+    }
+  };
+
   return (
-    <NavHashLink
+    <button
       className="purpleArrows"
-      to="/#about"
-      scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "end" })}
+      style={{ background: "none", border: "none", padding: 0, cursor: "pointer" }}
+      onClick={scrollToAbout}
+      aria-label="Scroll to About section"
+      type="button"
     >
       <img
         className="purpleArrows"
         src="/images/bottom_purple_arrows.svg"
-        alt="bottom puruple arrows"
+        alt="bottom purple arrows"
       />
-    </NavHashLink>
+    </button>
   );
 }
 
