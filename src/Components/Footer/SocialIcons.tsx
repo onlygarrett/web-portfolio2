@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { FaBluesky } from "react-icons/fa6";
 import "./SocialIcons.css";
 
